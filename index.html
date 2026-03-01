@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+<!-- HEADER -->
+<header class="flex justify-between items-center p-6 bg-white dark:bg-gray-800 shadow-md">
+    <div class="text-xl font-bold">My Dashboard</div>
+
+    <nav class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-indigo-500">Home</a>
+        <a href="#" class="hover:text-indigo-500">Dashboard</a>
+        <a href="#" class="hover:text-indigo-500">Profile</a>
+        <a href="#" class="hover:text-indigo-500">Settings</a>
+    </nav>
+</header>
+
+<div class="flex">
+
+<!-- SIDEBAR -->
+<aside class="hidden md:flex flex-col w-64 bg-gray-100 dark:bg-gray-800 p-4 space-y-4 min-h-screen">
+    <a href="#">Dashboard</a>
+    <a href="#">Analytics</a>
+    <a href="#">Projects</a>
+    <a href="#">Settings</a>
+</aside>
+
+<!-- MAIN -->
+<main class="p-6 w-full">
+
+<!-- CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+<div class="p-4 rounded-lg shadow-lg bg-gradient-to-br from-indigo-400 to-indigo-600 text-white">
+    <div class="text-sm font-semibold">Users</div>
+    <div class="mt-2 text-2xl font-bold">1,245</div>
+</div>
+
+<div class="p-4 rounded-lg shadow-lg bg-gradient-to-br from-red-400 to-red-600 text-white">
+    <div class="text-sm font-semibold">Revenue</div>
+    <div class="mt-2 text-2xl font-bold">$12,430</div>
+</div>
+
+<div class="p-4 rounded-lg shadow-lg bg-gradient-to-br from-green-400 to-green-600 text-white">
+    <div class="text-sm font-semibold">Orders</div>
+    <div class="mt-2 text-2xl font-bold">354</div>
+</div>
+
+<div class="p-4 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-600 text-white">
+    <div class="text-sm font-semibold">Feedback</div>
+    <div class="mt-2 text-2xl font-bold">87</div>
+</div>
+
+</div>
+
+<!-- TABLE -->
+<div class="mt-8 overflow-x-auto">
+<table class="min-w-full bg-white dark:bg-gray-800 rounded-lg shadow-md">
+
+<thead class="border-b border-gray-200 dark:border-gray-700">
+<tr>
+    <th class="p-3 text-left">Order ID</th>
+    <th class="p-3 text-left">Customer</th>
+    <th class="p-3 text-left">Status</th>
+    <th class="p-3 text-left">Amount</th>
+</tr>
+</thead>
+
+<tbody>
+<tr class="border-b hover:bg-gray-100 dark:hover:bg-gray-700">
+    <td class="p-3">001</td>
+    <td class="p-3">Surya</td>
+    <td class="p-3">Completed</td>
+    <td class="p-3">$120</td>
+</tr>
+
+<tr class="border-b hover:bg-gray-100 dark:hover:bg-gray-700">
+    <td class="p-3">002</td>
+    <td class="p-3">Sathya</td>
+    <td class="p-3">Completed</td>
+    <td class="p-3">$138</td>
+</tr>
+
+<tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
+    <td class="p-3">003</td>
+    <td class="p-3">Mani</td>
+    <td class="p-3">Completed</td>
+    <td class="p-3">$150</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+
+</main>
+</div>
+
+<!-- FOOTER -->
+<footer class="flex flex-col md:flex-row items-center justify-between p-4 bg-white dark:bg-gray-800 shadow-inner">
+    <div class="text-sm text-gray-600 dark:text-gray-300">
+        © 2026 Dashboard. All Rights Reserved
+    </div>
+
+    <div class="flex space-x-4 mt-2 md:mt-0">
+        <a href="#" class="text-indigo-500">Privacy</a>
+        <a href="#" class="text-indigo-500">Terms</a>
+        <a href="#" class="text-indigo-500">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>
